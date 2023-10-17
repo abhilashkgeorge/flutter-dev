@@ -19,6 +19,12 @@ class _CounterPageState extends State<CounterPage> {
     });
   }
 
+  void _resetCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +45,11 @@ class _CounterPageState extends State<CounterPage> {
 
 
             ElevatedButton(onPressed: _incrementCounter, child: 
-            const Text('Increment Counter!'))
+            const Text('Increment Counter!')),
+
+            ElevatedButton(onPressed: _resetCounter, child: 
+            const Text("Reset the counter!",
+            style: TextStyle(fontSize: 20),),)
           ],
         ),
       ),

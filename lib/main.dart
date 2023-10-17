@@ -1,8 +1,9 @@
-import "package:coolapp/pages/HomePage.dart";
-import "package:coolapp/pages/counter_page.dart";
-import "package:coolapp/pages/first_page.dart";
-import "package:coolapp/pages/logout_page.dart";
-import "package:coolapp/pages/settings.dart";
+// import "package:coolapp/pages/HomePage.dart";
+// import "package:coolapp/pages/counter_page.dart";
+// import "package:coolapp/pages/first_page.dart";
+// import "package:coolapp/pages/logout_page.dart";
+// import "package:coolapp/pages/settings.dart";
+import "package:coolapp/pages/todo_page.dart";
 import "package:flutter/material.dart";
 
 void main() {
@@ -18,14 +19,14 @@ class MyAPP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CounterPage(),
-      routes: {
-        '/homepage': (context) => const homePage(),
-        '/settingspage':(context) => const SettingsPage(),
-        '/logoutpage':(context) => const LogoutPage()
-      },
+      home: TodoPage(),
+      // routes: {
+      //   '/homepage': (context) => const homePage(),
+      //   '/settingspage':(context) => const SettingsPage(),
+      //   '/logoutpage':(context) => const LogoutPage()
+      // },
     );
   }
 }
